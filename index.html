@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>RETO 2</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="JS/FuncionesCabana.js"></script>
+        <script type="text/javascript" src="JS/FuncionesCliente.js"></script>
+        <script type="text/javascript" src="JS/FuncionesMensaje.js"></script>
+    </head>
+    <body>
+
+        <!-- Formulario de Cabaña --> 
+        <h2>Cabaña</h2>
+        <div id="resultado1"> </div>
+        <button onclick="traerInformacionCabana()">Consultar</button>
+
+        <div>
+            <input type="number" id="id1" placeholder="id">
+            <input type="text" id="brand" placeholder="brand">
+            <input type="number" id="rooms" placeholder="rooms">
+            <input type="number" id="category_id" placeholder="category_id">
+            <input type="text" id="name1" placeholder="name">
+        </div>
+        <button onclick="guardarInformacionCabana()">guardar</button>
+        <button onclick="editarInformacionCabana()">editar</button>
+        <br><br><hr>
+
+        <!-- Formulario de Cliente --> 
+        <h2>Cliente</h2>
+        <div id="resultado2"> </div>
+        <button onclick="traerInformacionCliente()">Consultar</button>
+        <div>
+            <input type="number" id="id2" placeholder="id">
+            <input type="text" id="name2" placeholder="name">
+            <input type="text" id="email" placeholder="email">
+            <input type="number" id="age" placeholder="age">
+        </div>
+        <button onclick="guardarInformacionCliente()">guardar</button>
+        <button onclick="editarInformacionCliente()">editar</button>
+        <br><br><hr>
+
+        <!-- Formulario de Mensaje --> 
+        <h2>Mensaje</h2>
+        <div id="resultado3"> </div>
+        <button onclick="traerInformacionMensaje()">Consultar</button>
+
+        <div>
+            <input type="number" id="id3" placeholder="id">
+            <input type="text" id="messagetext" placeholder="messagetext">
+        </div>
+        <button onclick="guardarInformacionMensaje()">guardar</button>
+        <button onclick="editarInformacionMensaje()">editar</button>
+        <br><br><hr>
+
+    </body>
+</html>
